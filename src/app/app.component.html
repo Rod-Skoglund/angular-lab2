@@ -1,0 +1,32 @@
+<h2>
+  Enter City and State to get weather results
+</h2>
+
+<form #myform = "ngForm" (ngSubmit) = "onSubmit(myform)" >
+  <input type = "text" name = "cityName" placeholder = "City Name" ngModel>
+  <br/><br>
+
+  <input type = "text" name = "stateName" placeholder = "State Name" ngModel>
+  <br/><br>
+
+  <input type = "submit" value = "Get Weather">
+</form>
+
+
+
+
+
+<!-- <form #itemForm="ngForm" (ngSubmit)="onSubmit(itemForm)">
+  <label for="name">
+    City <input class="form-control" name="city" ngModel required />
+    <br>
+    State <input class="form-control" name="state" ngModel required />
+  </label>
+  <br>
+  <button type="submit">Submit</button>
+</form>
+
+
+<div [hidden]="!itemForm.form.valid">
+  <p>{{ submitMessage }}</p>
+</div> -->
